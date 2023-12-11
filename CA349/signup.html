@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Account</title>
+    <script src="CA349/script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .signup-form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup-form .input-group {
+            margin-bottom: 15px;
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+        }
+
+        .signup-form .signup-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .signup-form .signup-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="home.html">
+            <span>Waves</span>
+        </a>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+    <div class="language-dropdown">
+        <select>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <!-- Add more language options as needed -->
+        </select>
+    </div>
+</header>
+
+<nav class="horizontal-navbar">
+    <ul>
+        <li class="categories-dropdown" id="categories-dropdown">
+            <a href="#">All Categories</a>
+            <div class="side-navbar">
+                <ul>
+                    <li><a href="speakers.html"><img src="CSS\speaker.png" alt="Speaker">Speakers</a></li>
+                    <li><a href="amplifiers.html"><img src="CSS\amplifier.png" alt="Amplifiers">Amplifiers</a></li>
+                    <li><a href="headphones.html"><img src="CSS\headphones.png" alt="Headphones">Headphones</a></li>
+                    <li><a href="dj.html"><img src="CSS\dj.png" alt="DJ Equipment">DJ Equipment</a></li>
+                    <li><a href="microphone.html"><img src="CSS\microphone.png" alt="Microphones">Microphones</a></li>
+                    <li><a href="radio.html"><img src="CSS\radio.png" alt="Radios">Radios</a></li>
+                </ul>
+            </div>         
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="clearance.html">Clearance</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="signup.html">Signup</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="account.html">Account</a></li>
+    </ul>
+</nav>
+<div class="signup-form">
+    <div class="input-group">
+        <input type="text" placeholder="Username">
+    </div>
+    <div class="input-group">
+        <input type="password" placeholder="Password">
+    </div>
+    <button class="signup-btn" onclick="redirectToHome()">Sign Up</button>
+</div>
+
+<script>
+    function redirectToHome() {
+        window.location.href = "home.html";
+    }
+</script>
+
+
+
+<footer>
+    <div class="footer-section">
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Enter your email">
+    </div>
+    <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: info@waves.com</p>
+        <p>Address: 123 Music Street, City</p>
+        <p>Phone: +1 234-567-8901</p>
+    </div>
+    <div class="footer-section">
+        <h3>Account</h3>
+        <ul>
+            <li><a href="signup.html">Login/Register</a></li>
+            <li><a href="cart.html">In Cart</a></li>
+            <li><a href="wishlist.html">Wishlist</a></li>
+            <li><a href="cart.html">Orders</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>Help</h3>
+        <ul>
+            <li>FAQ</li>
+            <li>Shipping</li>
+            <li>Find Store</li>
+            <li>Privacy Policy</li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <img src="CSS/twitter.png" alt="Twitter Icon" class="twitter-icon">
+            <img src="CSS/facebook.png" alt="Facebook Icon" class="facebook-icon">
+            <img src="CSS/instagram.png" alt="Instagram Icon" class="instagram-icon"></a>
+            <img src="CSS/tik-tok.png" alt="TikTok Icon" class="tiktok-icon">
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
